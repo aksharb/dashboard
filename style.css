@@ -18,6 +18,45 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  min-height: 100vh;
+}
+.sidebar {
+  background-color: #1098f7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.sidebar-img {
+  width: 40px;
+}
+
+.header {
+  background-color: #fbfef9;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.main {
+  background-color: #b4d2e7;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
